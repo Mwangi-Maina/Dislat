@@ -11,7 +11,8 @@ const solutionData = {
     ],
     image: "assets/dislat-dashboards-clipped.png",
     alt: "Dislat dashboard design showing analytics for sales, marketing, and finance",
-    cta: "Talk about BI dashboards"
+    cta: "View BI dashboard product",
+    url: "products/business-intelligence.html"
   },
   platform: {
     kicker: "Powerful business apps",
@@ -25,7 +26,8 @@ const solutionData = {
     ],
     image: "assets/dislat-power-platform-clipped.png",
     alt: "Microsoft Power Platform automation poster by Dislat Solutions",
-    cta: "Plan a Power Platform project"
+    cta: "View Power Platform product",
+    url: "products/power-platform.html"
   },
   finance: {
     kicker: "Better financial control",
@@ -39,7 +41,8 @@ const solutionData = {
     ],
     image: "assets/dislat-budget-template-clipped.png",
     alt: "Personal finance budget template poster with dashboard mockups",
-    cta: "Improve finance visibility"
+    cta: "View finance template product",
+    url: "products/finance-templates.html"
   },
   automation: {
     kicker: "Simpler operations",
@@ -53,7 +56,8 @@ const solutionData = {
     ],
     image: "assets/dislat-automation.png",
     alt: "Dislat automation consultation poster showing smart business solutions",
-    cta: "Automate a process"
+    cta: "View workflow automation product",
+    url: "products/workflow-automation.html"
   },
   compliance: {
     kicker: "Lower risk",
@@ -67,7 +71,8 @@ const solutionData = {
     ],
     image: "assets/dislat-brochure.png",
     alt: "Dislat Solutions brochure with services, benefits, and framework",
-    cta: "Discuss compliance support"
+    cta: "View compliance advisory product",
+    url: "products/compliance-advisory.html"
   },
   payroll: {
     kicker: "Payroll with confidence",
@@ -81,7 +86,8 @@ const solutionData = {
     ],
     image: "assets/dislat-payroll-clipped.png",
     alt: "Mshahara Pro payroll automation poster",
-    cta: "Explore payroll automation"
+    cta: "View payroll product",
+    url: "products/payroll-systems.html"
   }
 };
 
@@ -154,6 +160,7 @@ solutionButtons.forEach((button) => {
     solutionImage.src = data.image;
     solutionImage.alt = data.alt;
     solutionCta.textContent = data.cta;
+    solutionCta.href = data.url;
 
     solutionList.replaceChildren(
       ...data.list.map((item) => {
